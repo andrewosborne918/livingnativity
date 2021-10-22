@@ -1,0 +1,59 @@
+body{
+  margin: 20px 20px;
+}
+
+a{
+  color: black;
+}
+
+a:hover{
+  color: black;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+
+
+.audio-player{
+  margin: 20px 0;
+}
+
+
+/* Paragraph description */
+.paragraph-description{
+  word-wrap: break-word;
+  max-width: 70%;
+}
+
+
+
+/* Next Section Buttons */
+.arrow-left-buttons{
+  width: 5rem;
+  float: left;
+}
+
+.arrow-right-buttons{
+  width: 5rem;
+  float: right;
+}
+
+.container{
+  max-width: 100%;
+}
+
+.last-button{
+  position: relative;
+  text-align: left;
+}
+
+.nav-buttons{
+  max-width: 100%;
+}
+
+.next-button{
+  position: relative;
+  text-align: right;
+}
