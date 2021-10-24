@@ -1,3 +1,5 @@
+
+
 body {
   background-color: #EEEEEE;
 }
@@ -20,7 +22,7 @@ p {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   position: static;
   display: inline;
   font-family: museo-sans, sans-serif;
@@ -38,11 +40,12 @@ h3 {
 }
 
 @media (max-width: 1000px) {
-  h1 {
-    font-size: 1.5rem;
+
+  p {
+    font-size: 3rem;
   }
 
-  h3 {
+  .nav-item{
     font-size: 2.5rem;
   }
 }
@@ -76,9 +79,14 @@ margin: 0;
   display: block!important;
 }
 
+.navbar-toggler-icon {
+  padding: 2.5rem;
+}
+
+
 /* Audio Player */
 .audio-player {
-  margin: 20px 30px;
+  margin: 2rem 2rem;
 }
 
 .audio-text {
