@@ -1,8 +1,35 @@
 body{
-  margin: 20px 20px;
+  margin: 20px 20%;
   text-align: center;
+  background-color: #00ADB5;
+}
+@media (max-width: 1020px) {
+  body{
+    margin: 20px 10%;
+  }
 }
 
 h1{
-  margin: 250px 0 50px;
+  margin: 250px 20% 50px;
+  font-size: 3rem;
+  color: #EEEEEE;
+  font-family: museo-sans-display, sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
+
+h3 {
+  margin: 20px 0;
+}
+
+.page-button {
+  width: 300px !important;
+  margin: 20px;
+}
+
+
+/* Color Pallette
+#393E46
+#00ADB5
+#AAD8D3
+#EEEEEE */
