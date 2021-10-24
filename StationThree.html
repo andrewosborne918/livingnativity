@@ -15,24 +15,45 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://use.typekit.net/hlo8hox.css" rel="stylesheet">
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/3e3ecfc87a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <a href="index.html">
-    <h1>Living Nativity 2021</h1>
-  </a>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="h1 navbar-brand" href="StationOne.html">
+      <img class="logo" src="images/clc-logo.png" alt="Cornerstone Lutheran Church">
+      <h1>Living Nativity 2021</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a href="StationOne.html" class="nav-link">Start Tour</a>
+        </li>
+        <li class="nav-item">
+          <a href="ThankYou.html" class="nav-link">Christmas Eve</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
   <hr>
 
   <!-- Audio -->
   <h3>Station 3: The Magi and the Star</h3>
-  <em>Click play to hear audio.</em>
+  <em class="audio-text">Click "play" for audio.</em>
   <br>
   <audio class="audio-player" controls>
     <source src="audio/Station3.mp3" type="audio/mpeg" />
-    Your browser doesn't suppport the audio html tag.
+    <em>This browser doesn't suppport audio.</em>
   </audio>
   <hr>
 
@@ -56,7 +77,7 @@
     <div class="row nav-buttons">
       <div class="col">
         <div class="last-button">
-          <h4>Previous Station</h4>
+          <h4>Previous</h4>
           <div class="arrow-left-buttons">
             <a href="StationTwo.html"><img src="images/left-arrow.svg" alt="Previous Station"></a>
           </div>
@@ -64,13 +85,17 @@
       </div>
       <div class="col">
         <div class="next-button">
-          <h4>Next Station</h4>
           <div class="arrow-right-buttons">
+            <h4>Next</h4>
             <a href="StationFour.html"><img src="images/right-arrow.svg" alt="Next Station"></a>
           </div>
         </div>
       </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
