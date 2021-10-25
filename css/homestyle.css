@@ -1,17 +1,17 @@
 body{
-  margin: 20px 20%;
+  margin: 20px 15%;
   text-align: center;
   background-color: #00ADB5;
 }
 
 @media (max-width: 1020px) {
   body{
-    margin: 25% 20%;
+    margin: 25% 15%;
   }
 }
 
 h1{
-  margin: 20% 5% 50px;
+  margin: 20% 0 50px;
   font-size: 4.5rem;
   color: #EEEEEE;
   font-family: museo-sans-display, sans-serif;
