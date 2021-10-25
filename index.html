@@ -1,47 +1,95 @@
-body{
-  margin: 20px 20%;
-  text-align: center;
-  background-color: #00ADB5;
-}
-@media (max-width: 1020px) {
-  body{
-    margin: 20% 20%;
-  }
-}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-h1{
-  margin: 250px 5% 50px;
-  font-size: 4.5rem;
-  color: #EEEEEE;
-  font-family: museo-sans-display, sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
+<head>
+  <meta charset="utf-8">
+  <title>Welcome to Living Nativity 2021</title>
 
-h3 {
-  margin: 20px 0;
-}
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
-.form-control {
-  font-size: 2rem;
-}
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/homestyle.css">
 
-.page-button {
-  width: 300px !important;
-  margin: 20px;
-}
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://use.typekit.net/hlo8hox.css" rel="stylesheet">
 
-.btn-lg {
-  padding: 25px 50px;
-  font-size: 2rem;
-  border-radius: 10px;
-  border-width: thick;
-  margin: 20px;
-}
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/3e3ecfc87a.js" crossorigin="anonymous"></script>
 
+</head>
 
-/* Color Pallette
-#393E46
-#00ADB5
-#AAD8D3
-#EEEEEE */
+<body>
+
+  <h1>Welcome to Living Nativity 2021</h1>
+
+  <!-- Form -->
+  <form name="submit-to-google-sheet" class="row g-3 justify-content-center needs-validation">
+    <div class="row">
+      <div class="col-lg-4">
+        <label for="validationCustom02" class="form-label"></label>
+        <input name="firstName" type="text" class="form-control" id="validationCustom02" placeholder="First name" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <label for="validationCustom01" class="form-label"></label>
+        <input name="lastName" type="text" class="form-control" id="validationCustom01" placeholder="Last name" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <label for="validationCustom02" class="form-label"></label>
+        <input name="numOfPeople" type="number" class="form-control" id="validationCustom02" placeholder="Number of people" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <label for="validationCustom02" class="form-label"></label>
+        <input name="email" type="email" class="form-control" id="validationCustom02" placeholder="Email" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-outline-light btn-lg submit-btn" type="submit" name="Start Tour">Start Your Tour</button>
+    </div>
+  </form>
+
+  <!-- Javascript -->
+
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyNFGj_RIqgug0wHTM1qYOu2iNdiwOImkfWd1Cl4Xi3Px_jU76E/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {
+          method: 'POST',
+          body: new FormData(form)
+        })
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message));
+
+        window.open('StationOne.html', '_self');
+
+    })
+
+  </script>
+
+</body>
+
+</html>
