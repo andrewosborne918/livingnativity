@@ -1,12 +1,12 @@
 body{
-  margin: 25px 20%;
+  margin: 20px 20%;
   text-align: center;
   background-color: #00ADB5;
 }
 
 @media (max-width: 1020px) {
   body{
-    margin: 35% 20%;
+    margin: 30% 20%;
   }
 }
 
