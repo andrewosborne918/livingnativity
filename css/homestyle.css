@@ -5,7 +5,7 @@ body{
 }
 @media (max-width: 1020px) {
   body{
-    margin: 20px 10%;
+    margin: 20% 20%;
   }
 }
 
@@ -22,8 +22,19 @@ h3 {
   margin: 20px 0;
 }
 
+.form-control {
+  font-size: 2rem;
+}
+
 .page-button {
   width: 300px !important;
+  margin: 20px;
+}
+
+.btn-lg {
+  padding: 25px 50px;
+  font-size: 2rem;
+  border-radius: 10px;
   margin: 20px;
 }
 
