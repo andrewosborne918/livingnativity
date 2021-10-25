@@ -1,7 +1,13 @@
 body{
-  margin: 50% 10%;
+  margin: 10% 20%;
   text-align: center;
   background-color: #00ADB5;
+}
+
+@media (max-width: 1020px) {
+  body{
+    margin: 50% 20%;
+  }
 }
 
 h1{
