@@ -50,6 +50,10 @@ h3 {
   }
 }
 
+hr {
+  margin: 20px 0;
+}
+
 /* Header */
 .header {
   position: relative;
@@ -128,6 +132,9 @@ audio::-webkit-media-controls-panel {
 
 .nav-buttons {
   max-width: 100%;
+}
+
+.nav-container {
   margin-bottom: 40px;
 }
 
