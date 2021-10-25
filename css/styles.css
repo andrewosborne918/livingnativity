@@ -112,12 +112,12 @@ audio::-webkit-media-controls-panel {
 
 /* Next Section Buttons */
 .arrow-left-buttons {
-  width: 5rem;
+  width: 7rem;
   float: left;
 }
 
 .arrow-right-buttons {
-  width: 5rem;
+  width: 7rem;
   text-align: center;
 }
 
